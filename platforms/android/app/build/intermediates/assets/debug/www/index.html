@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+
+	<link rel="stylesheet" href="css/estilos.css">
+  <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#8B0000">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body id="index">
+
+		<div class="row">
+				<a><img class="img-responsive" style="margin-top: 20px" width="200" src="img/logo_verde_final.svg"></a>
+	</div>
+	<div class="row">
+				<div class="row center">
+					<div class="input-field col s6 push-s3">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="nomeLog" type="text" class="validate">
+						<label for="nomeLog">Nome/Email</label>
+					</div>
+				</div>
+				<div class="row">
+				<div class="input-field col s6 push-s3">
+						<i class="material-icons prefix">keyboard</i>
+						<input id="senhaLog" type="password" class="validate">
+						<label for="senhaLog">Senha</label>
+						</div>
+				</div>
+		</div>
+		<div class="row modal-footer">
+			<button id="btnLogin" class="btn img-responsive yellow accent-2 black-text"><b>Login</b></button>
+		</div>
+		<div class="row">
+			<button href="#modalcadastro" class="btn img-responsive modal-trigger green darken-4 black-text"><b>Cadastrar</b></button>
+		</div>
+
+		<!-- Modal Structure -->
+		<div id="modalcadastro" class="modal">
+				<div class="modal-content">
+				  <div class="row">
+					  <form class="col s12">
+						<div class="row">
+							<a class="modal-action modal-close"><i style="margin-left: 95%;margin-top:0%"class="black-text text-darken-4 material-icons">clear</i></a>
+
+							<h6>Criar Conta</h6>
+							
+						  <div class="input-field col s12 m6">
+							<input id="nomeconta" type="text" class="validate">
+							<label for="nomeconta">Nome</label>
+						  </div>
+
+						  <div class="input-field col s12 m6">
+							<input id="datanasc" type="text" class="datepicker">
+							<label for="datanasc">Data de nascimento</label>
+							</div>
+
+							<div class="input-field col s12 m6">
+								<input id="email" type="text" class="validate">
+								<label for="email">Email</label>
+							</div>
+
+						  <div class="input-field col s12 m6">
+							<input id="senha" type="password" class="validate">
+							<label for="senha">Senha</label>
+							</div>
+							
+							<div class="input-field col s12 m6">
+								<input id="pergunta" type="text" class="validate">
+								<label for="pergunta">Pergunta de Segurança</label>
+							</div>
+
+							<div class="input-field col s12 m6">
+								<input id="resposta" type="text" class="validate">
+								<label for="resposta">Resposta de Segurança</label>
+							</div>
+
+						  
+					  </div>
+					  </form>
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <a href="#!" class="modal-action modal-close waves-effect waves-green btn" id="btnCadastro">Adicionar</a>
+				</div>
+			  </div>
+		
+		
+		<div class="row" >
+			<a href="recuperar.html" class=" blue-text" style="margin-left: 10px">esqueci minha senha</a>
+			<!--<u class=" blue-text right" style="margin-right: 20px"><a class="material-icons prefix ">help</a>ajuda</u>-->
+			</div>
+		
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="js/cadastro.js"></script>
+		<script src="js/login.js"></script>
+		<script src="js/contas.js"></script>
+		<script src="js/redirecionar.js"></script>
+</body>
+</html>

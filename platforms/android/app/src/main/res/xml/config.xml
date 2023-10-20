@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.txystem.checkin" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>CheckIN</name>
+    <description>
+        Um aplicativo de Produtivade Financeira
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        TXystem Enterprise
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="res/checkin-icon.png" />
+    <allow-intent href="market:*" />
+    <splash src="res/screen/android/splash-checkin-frame1.png" />
+    <splash src="res/screen/android/splash-checkin-frame2.png" />
+    <splash src="res/screen/android/splash-checkin-frame3.png" />
+    <splash src="res/screen/android/splash-checkin-frame4.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="FadeSplashScreenDuration" value="750" />
+</widget>

@@ -1,0 +1,62 @@
+body{
+
+	background-color: #f2f2f2;
+}
+.bgverde{
+
+	background-color: #0E7F49;
+}
+
+.titulo{
+	font-size: 1.3em;
+	margin-right: auto;
+	margin-left: 5%;
+}
+.tabs .indicator{
+
+	background-color: #fff;
+}
+.topoFixo{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+.section{
+
+	padding-top: 125px;
+
+}
+.disabled{
+	color: #e51c23
+}
+.img-circle-responsive{
+	width: 200;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+
+.img-responsive{
+	width: 200;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.checkbox-indigo[type="checkbox"] + label:before{
+    border: 2px solid indigo;
+    background: transparent;
+}
+
+.modal{
+	height: 99%;
+	width: 99%;
+}
+
+.modal-content{
+	
+	width: 99%;
+}

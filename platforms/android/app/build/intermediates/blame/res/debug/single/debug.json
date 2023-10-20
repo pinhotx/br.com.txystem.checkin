@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
+        "source": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/src/main/res/xml/config.xml"
+    },
+    {
+        "merged": "/home/pinhotx/checkin/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_screen.png.flat",
+        "source": "/home/pinhotx/checkin/platforms/android/app/src/main/res/drawable-mdpi/screen.png"
+    },
+    {
+        "merged": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_screen.png.flat",
+        "source": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/src/main/res/drawable-mdpi/screen.png"
+    },
+    {
+        "merged": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
+        "source": "/home/pinhotx/Dropbox/adsFatec/Conteúdos/TCC/br.com.txystem.checkin/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
+    },
+    {
+        "merged": "/home/pinhotx/checkin/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
+        "source": "/home/pinhotx/checkin/platforms/android/app/src/main/res/xml/config.xml"
+    },
+    {
+        "merged": "/home/pinhotx/checkin/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
+        "source": "/home/pinhotx/checkin/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
+    }
+]

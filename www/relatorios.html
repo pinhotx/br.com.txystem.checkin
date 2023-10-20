@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orçametos</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/Chart.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+
+</head>
+<body>    
+        <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper green darken-4">  
+          <a href="#!" class="brand-logo white-text center">Relatório</a>
+          <a href="#" data-target="mobile" class="sidenav-trigger"><i class="white-text text-darken-4 material-icons">menu</i></a>
+          
+          <ul class="left hide-on-med-and-down">
+            <li><a href="contas.html">Contas</a></li>
+            <li><a href="despesas.html">Despesas</a></li>
+            <li><a href="orçamentos.html">Orçamentos</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="sair"><a href="#!">Sair</a></li>
+          </ul>
+        </div>
+
+      </nav>
+        </div>
+      <ul class="sidenav" id="mobile">
+         <li><div class="user-view">
+          <a href="#user"><img class="circle" src="img/cat.jpg"></a>
+          <a href="#name"><span class="black-text name" id="nomeUser"></span></a>
+          <a href="#email"><span class="black-text email" id="emailUser"></span></a>
+        </div><li class="divider" tabindex="-1"></li>
+        <li><a href="inicio.html"><i class="material-icons">home</i>Início</a></li>
+        <li><a href="contas.html"><i class="material-icons">account_balance</i>Bancos</a></li>
+        <li><a href="despesas.html"><i class="material-icons">credit_card</i>Despesas</a></li>
+        <li><a href="orcamentos.html"><i class="material-icons">content_paste</i>Orçamentos</a></li>
+        <li><a href="historico.html"><i class="material-icons">attach_money</i>Saldo</a></li>
+        <li><a href="relatorios.html"><i class="material-icons">assessment</i>Relatórios</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="config.html"><i class="material-icons">build</i>Configuração</a></li>
+        <li class="sair"><a href="#!"><i class="material-icons">power_settings_new</i>Sair</a></li>
+      </ul>
+
+
+      <div class="row">
+            <div class="input-field">
+                <input style="margin-top:2.60%" type="text" id='DT' placeholder="  0000-00-00" class="datepicker col s4">
+                <label style="margin-top:2.3%">Data</label>
+            </div>
+          <div class="input-field col s4">
+              <select placeholder=" Etiqueta" id='TP'>
+                  <option value='0'>Geral</option>
+                  <option value="1">Receitas</option>
+                  <option value="2">Despesas</option>
+              </select>
+              <label>Tipo de Transação</label>
+          </div>
+          <div class="input-field col s4">
+              <select placeholder=" Banco"  id="ET" class="eti0">
+                <option value='0'>Geral</option>
+              </select>
+              <label>Etiqueta</label>
+          </div>
+      </div>
+
+      <!--
+        <div id="apagar"class="chart-container" style="position: relative; height:40vh; width:80vw; margin-left: auto; margin-right: auto;">
+            <canvas class="center" id="myChart"></canvas>
+        </div>   
+-->
+    <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content apagar">
+                  <canvas class="center" id="myChart"></canvas>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="historico" class="row">
+
+    </div>
+      
+      
+
+      
+
+
+      
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cor.js"></script>
+    <script src="js/redirecionar.js"></script>
+    <script src="js/relatorio.js"></script>
+    
+    
+</body>
+</html>

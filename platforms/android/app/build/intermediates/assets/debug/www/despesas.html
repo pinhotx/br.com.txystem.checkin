@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Despesas</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body class="bgverde">
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey lighten-3">
+            <a href="#!" class="brand-logo green-text text-darken-4 center">Despesas</a>
+          <a href="#" data-target="mobile" class="sidenav-trigger"><i class="green-text text-darken-4 material-icons">menu</i></a>
+          <!--<i  data-target="submenu" data-gutter="5"  data-contrainwidth="false" class="green-text text-darken-4 material-icons waves-circle dropdown-button right">more_vert</i>
+          -->
+          <ul class="left hide-on-med-and-down">
+            <li><a href="contas.html">Contas</a></li>
+            <li><a href="despesas.html">Despesas</a></li>
+            <li><a href="orçamentos.html">Orçamentos</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="sair"><a href="#!">Sair</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+      <ul class="sidenav" id="mobile">
+         <li><div class="user-view">
+          <a href="#user"><img class="circle" src="img/cat.jpg"></a>
+          <a href="#name"><span class="black-text name" id="nomeUser"></span></a>
+          <a href="#email"><span class="black-text email" id="emailUser"></span></a>
+        </div><li class="divider" tabindex="-1"></li>
+        <li><a href="inicio.html"><i class="material-icons">home</i>Início</a></li>
+        <li><a href="contas.html"><i class="material-icons">account_balance</i>Bancos</a></li>
+        <li><a href="despesas.html"><i class="material-icons">credit_card</i>Despesas</a></li>
+        <li><a href="orcamentos.html"><i class="material-icons">content_paste</i>Orçamentos</a></li>
+        <li><a href="historico.html"><i class="material-icons">attach_money</i>Saldo</a></li>
+        <li><a href="relatorios.html"><i class="material-icons">assessment</i>Relatórios</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="config.html"><i class="material-icons">build</i>Configuração</a></li>
+        <li class="sair"><a href="#!"><i class="material-icons">power_settings_new</i>Sair</a></li>
+      </ul>
+
+
+      <div class="row" id="despesas">
+      </div>
+
+        <!-- Modal Trigger -->
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large modal-trigger grey lighten-3" href="#modaldespesa" id="adicionar">
+            <i class="green-text text-darken-4 material-icons ">add</i></a>
+        </div>
+
+        <!-- Modal Structure -->
+          <div id="modaldespesa" class="modal">
+            <div class="modal-content">
+              <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                        <a class="modal-action modal-close"><i style="margin-left: 95%;margin-top:0%"class="fechar black-text text-darken-4 material-icons">clear</i></a>
+
+                      <h6>Criar Despesa</h6>
+                      <div class="input-field col s12 m6">
+                          <input id="valordespesa" type="number" class="money2">
+                          <label for="valordespesa">Valor</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <input id="nomedespesa" type="text" class="validate">
+                            <label for="nomedespesa">Nome da Despesa</label>
+                          </div>
+
+                      <div class="input-field col s12 m6">
+                          <select id="contaDesp" class="contaDesp" >
+
+                          </select>
+                          <label>Conta</label>
+                      </div>
+
+                      <div class="input-field col s12 m6">
+                          <select id="etiqueta" class="eti2">
+                              
+                          </select>
+                          <label>Etiqueta</label>
+                      </div>
+                      <div class="input-field col s12 m6 appendEti2">
+
+                      </div>
+                  </div>
+                  </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action waves-effect waves-green btn" id="add-btn-despesa">Adicionar</a>
+            </div>
+          </div>
+          <!-- Modal Structure -->
+          <div id="modaldespesaatt" class="modal">
+            <div class="modal-content">
+              <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                        <a class="modal-action modal-close"><i style="margin-left: 95%;margin-top:0%"class="fechar black-text text-darken-4 material-icons">clear</i></a>
+                        <a><i style="margin-left: 95%;margin-top:2%"class="black-text text-darken-4 material-icons editar">edit</i></a>
+
+                      <h6>Detalhes da Despesa</h6>
+                      <div class="input-field col s12 m6">
+                          <input placeholder=""id="valordespatt" type="number" class="money2">
+                          <label for="valordespatt">Valor</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <input placeholder=""id="nomedespatt" type="text" class="validate">
+                            <label for="nomedespatt">Nome da Despesa</label>
+                          </div>
+
+                      <div class="desaparecer input-field col s12 m6">
+                          <select id="contaDespatt" class="contaDesp">
+
+                          </select>
+                          <label>Conta</label>
+                      </div>
+
+                      <div class="desaparecer input-field col s12 m6">
+                          <select id="etiquetadespatt" class="eti2">
+                              
+                          </select>
+                          <label>Etiqueta</label>
+                      </div>
+                  </div>
+                  </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action waves-effect waves-green btn" id="att-btn-despesa">Atualizar</a>
+            </div>
+          </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/redirecionar.js"></script>
+    <script src="js/despesa.js"></script>
+    <script src="js/jquery.mask.js"></script>
+</body>
+</html>
